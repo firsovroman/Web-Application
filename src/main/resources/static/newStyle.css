@@ -1,0 +1,56 @@
+
+* {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    /*полупрозрачный*/
+    /*color: rgba(0,0,0,0.5);*/
+
+    /*прозрачный*/
+    color: rgba(0,0,0,0);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+
+.site-header{
+    border: 1px solid #c0c0c0;
+    padding: 10px;
+    /*overflow: hidden;*/
+    margin-bottom: 30px;
+}
+
+.site-header h1 {
+    font-size: 4rem;
+    position: relative;
+}
+
+
+.site-header-bg {
+    background: url('./site-header-bg.jpg');
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: -31%;
+    /*background-position-y: 50%;*/
+    background-repeat: no-repeat;
+
+    animation-name: header-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header-animation {
+    0%{
+        background-position-y: -31%;
+    }
+    100%{
+        background-position-y: 100%;
+    }
+}
+
+
